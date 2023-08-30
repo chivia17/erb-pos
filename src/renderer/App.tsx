@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import AppProvider from './providers/app';
 
 //Providers
+import ProductProvider from './context/ProductContext';
 import UserProvider from './context/UserContext';
 
 export default function App() {
@@ -12,10 +13,12 @@ export default function App() {
     <AppProvider>
       <Router>
         <UserProvider>
-          <Routes>
-            <Route path="/" element={<Login />} />
-            <Route path='/home' element={<Home />}></Route>
-          </Routes>
+          <ProductProvider>
+            <Routes>
+              <Route path="/" element={<Login />} />
+              <Route path='/home' element={<Home />}></Route>
+            </Routes>
+          </ProductProvider>
         </UserProvider>
       </Router>
     </AppProvider>
