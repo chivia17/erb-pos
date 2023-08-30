@@ -11,4 +11,5 @@ export interface UserContextData {
   user: User | undefined;
   isLogged: boolean;
   login: (username:string, password:string) => void;
+  logout: () => void;
 }

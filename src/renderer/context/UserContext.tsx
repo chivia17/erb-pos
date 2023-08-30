@@ -25,12 +25,18 @@ const UserProvider : FC<Props> = ({ children }) => {
     console.log('Is login in');
   }
 
+  const logout = () => {
+    setIsLogged(false);
+    console.log('Is logout')
+  }
+
   return (
     <UserContext.Provider
       value={{
         user,
         isLogged,
-        login
+        login,
+        logout
       }}
       >
         {children}
