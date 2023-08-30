@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import LoginButton from 'renderer/components/LoginButton';
-import PasswordInput from 'renderer/components/PasswordInput';
-import UsernameInput from 'renderer/components/UsernameInput';
+import LoginButton from 'renderer/components/Login/LoginButton';
+import PasswordInput from 'renderer/components/Login/PasswordInput';
+import UsernameInput from 'renderer/components/Login/UsernameInput';
 import login from '../../../assets/login.png';
 
 export default function Login () {
