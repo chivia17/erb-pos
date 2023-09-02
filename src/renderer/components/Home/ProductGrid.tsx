@@ -1,4 +1,4 @@
-import GridItem from './GridItem';
+import GridItem from './ProductGridComponents/GridItem';
 
 export default function ProductGrid() {
   const products = [

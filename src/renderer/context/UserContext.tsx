@@ -9,7 +9,7 @@ export const UserContext = createContext<UserContextData | null>(null);
 
 const UserProvider : FC<Props> = ({ children }) => {
   const [user, setUser] = useState<User>();
-  const [isLogged, setIsLogged] = useState<boolean>(false);
+  const [isLogged, setIsLogged] = useState<boolean>(true);
 
   const login = (username: string, password: string) => {
     setUser({

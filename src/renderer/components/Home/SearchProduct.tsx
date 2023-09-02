@@ -23,7 +23,7 @@ export default function SearchProduct() {
           onChange={handleWordToSearch}/>
         <div className="w-1/3">
           <button type="button"
-            className="cursor-pointer text-white font-semibold items-end bg-sky-700 rounded-md w-full h-full p-1"
+            className="cursor-pointer text-white font-semibold items-end bg-sky-700 hover:bg-sky-900 rounded-md w-full h-full p-1"
             onClick={handleClickSearch}>
             Search
           </button>

@@ -54,8 +54,8 @@ export default function CategoryFilter() {
         return (
           <div key={index} className={classNames({
             'flex rounded my-3 pr-2 px-2 text-center justify-center items-center cursor-pointer': true,
-            'bg-sky-700': categorySelected === item.name,
-            'bg-white hover:bg-slate-100 hover:border hover:border-sky-700': categorySelected !== item.name
+            'bg-sky-700 text-white': categorySelected === item.name,
+            'bg-white hover:bg-sky-900 hover:text-white': categorySelected !== item.name
           })}
           onClick={handleCategoryClick}>
             <span>{item.name}</span>

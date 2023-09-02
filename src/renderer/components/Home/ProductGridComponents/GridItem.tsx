@@ -1,7 +1,7 @@
 import { useState } from 'react';
+import ProductImage from '../ProductImage';
 import AddToCartButton from './AddToCartButton';
 import Counter from './Counter';
-import ProductImage from './ProductImage';
 import ProductInfo from './ProductInfo';
 
 export default function GridItem({name}) {
@@ -10,7 +10,9 @@ export default function GridItem({name}) {
 
   return (
     <div className="h-56 bg-white rounded">
-      <ProductImage />
+      <div className='h-1/2'>
+        <ProductImage />
+      </div>
       <ProductInfo name={name} cost={300}/>
       <div className='flex flex-nowrap'>
         <Counter quantity={quantity} stock={stock} setQuantity={setQuantity}/>
