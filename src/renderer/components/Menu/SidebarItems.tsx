@@ -59,7 +59,7 @@ export default function SidebarItems({collapsed}) {
       <ul className='my-2 flex flex-col gap-2 items-stretch'>
         {sidebarItems.map((item, index) => {
           return (
-            <SidebarItem collapsed={collapsed}
+            <SidebarItem key={index} collapsed={collapsed}
               index={index}
               icon={item.icon}
               label={item.label}

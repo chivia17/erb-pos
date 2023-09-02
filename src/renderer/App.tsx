@@ -1,7 +1,9 @@
 import { Route, MemoryRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
-import Home from './pages/Home';
+import Layout from './layout/Layout';
+import Category from './pages/Category';
 import Login from './pages/Login';
+import POS from './pages/POS';
 import AppProvider from './providers/app';
 
 //Providers
@@ -16,7 +18,10 @@ export default function App() {
           <ProductProvider>
             <Routes>
               <Route path="/" element={<Login />} />
-              <Route path='/home' element={<Home />}></Route>
+              <Route element={<Layout />}>
+                <Route path='/home' element={ <POS />} />
+                <Route path='/category' element={<Category />} />
+              </Route>
             </Routes>
           </ProductProvider>
         </UserProvider>
