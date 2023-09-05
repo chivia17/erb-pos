@@ -14,7 +14,7 @@ export default function SidebarItems({collapsed}) {
   const sidebarItems = [
     {
       label: "Home",
-      href: "/",
+      href: "/home",
       icon: <HomeIcon className="w-6 h-6" />,
     },
     {
@@ -33,14 +33,14 @@ export default function SidebarItems({collapsed}) {
       icon: <UsersIcon className="w-6 h-6" />,
     },
     {
+      label: "Suppliers",
+      href: "/provider",
+      icon: <TruckIcon className="w-6 h-6" />,
+    },
+    {
       label: "Sales",
       href: "/sale",
       icon: <CurrencyDollarIcon className="w-6 h-6" />,
-    },
-    {
-      label: "Suppliers",
-      href: "/suplier",
-      icon: <TruckIcon className="w-6 h-6" />,
     },
     {
       label: "Dashboard",
