@@ -49,7 +49,7 @@ export default function CategoryFilter() {
   }
 
   return (
-    <div className="flex whitespace-nowrap flex-nowrap overflow-x-scroll w-full gap-5 ml-6 mx-4 h-16">
+    <div className="flex whitespace-nowrap flex-nowrap w-full gap-5 ml-6 mx-4 h-16">
       {categories.map((item, index) => {
         return (
           <div key={index} className={classNames({
