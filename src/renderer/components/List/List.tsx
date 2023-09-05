@@ -2,45 +2,8 @@ import FilterList from './FilterList';
 import ListActions from './ListActions';
 import Pagination from './Pagination';
 
-export default function List(props) {
-  const headers = [
-    {
-      label: 'Name',
-      key: 'name',
-      textOrientation: 'text-left'
-    },
-    {
-      label: 'Products',
-      key: 'products',
-      textOrientation: 'text-center'
-    },
-    {
-      label: 'Status',
-      key: 'status',
-      textOrientation: 'text-center'
-    }
-  ];
+export default function List({headers, items}) {
   const isAdmin = true;
-  const items = [
-    {
-      id: 1,
-      name: 'Skin care',
-      products: 8,
-      status: 'Active'
-    },
-    {
-      id: 2,
-      name: 'Bags',
-      products: 1,
-      status: 'Active'
-    },
-    {
-      id: 3,
-      name: 'Toys',
-      products: 5,
-      status: 'Active'
-    }
-  ]
 
   return (
     <div className="w-full h-fit overflow-y-hidden rounded-lg">
