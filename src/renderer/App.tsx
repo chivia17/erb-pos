@@ -5,9 +5,10 @@ import Category from './pages/Category';
 import Login from './pages/Login';
 import POS from './pages/POS';
 import Provider from './pages/Provider';
+import User from './pages/User';
 import AppProvider from './providers/app';
 
-//Providers
+// Providers
 import ProductProvider from './context/ProductContext';
 import UserProvider from './context/UserContext';
 
@@ -20,9 +21,10 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Login />} />
               <Route element={<Layout />}>
-                <Route path='/home' element={ <POS />} />
-                <Route path='/category' element={<Category />} />
-                <Route path='/provider' element={<Provider />} />
+                <Route path="/home" element={<POS />} />
+                <Route path="/category" element={<Category />} />
+                <Route path="/provider" element={<Provider />} />
+                <Route path="/user" element={<User />} />
               </Route>
             </Routes>
           </ProductProvider>
