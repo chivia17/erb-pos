@@ -4,6 +4,7 @@ import Layout from './layout/Layout';
 import Category from './pages/Category';
 import Login from './pages/Login';
 import POS from './pages/POS';
+import Product from './pages/Product';
 import Provider from './pages/Provider';
 import User from './pages/User';
 import AppProvider from './providers/app';
@@ -25,6 +26,7 @@ export default function App() {
                 <Route path="/category" element={<Category />} />
                 <Route path="/provider" element={<Provider />} />
                 <Route path="/user" element={<User />} />
+                <Route path="/product" element={<Product />} />
               </Route>
             </Routes>
           </ProductProvider>
